@@ -1,0 +1,558 @@
+/* Device = Desktops */
+@media screen and (min-width: 1281px) {
+    #profile{
+        height: 83vh;
+        margin-bottom: 6rem;
+        margin-top: 0;
+    }
+    .about-containers{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .job {
+        flex-basis: 100%;
+        width: 100%; /* Ensures each job container takes full width */
+    }
+}
+/* Device = Laptops, Desktops */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    #desktop-nav{
+        display: flex;
+    }
+    #hamburger-nav {
+        display: none;
+    }
+    #skills, .skills-details-container{
+        margin-top: 2rem;
+    }
+    #education{
+        margin-top: 20rem;
+    }
+    #profile, .section-container{
+        display: block;
+        flex-direction: column;
+    }
+    section, .section-container{
+        height: fit-content;
+    }
+    section{
+        margin: 0.5%;
+        padding-top: 200px;
+    }
+    .section__pic-container{
+        /* width: 275px;
+        height: 275px; */
+        width: auto;
+        margin-top: 20%;
+        margin: 0 auto 2rem;
+    }
+    .about-containers{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Device = Tablets, Ipads (portrait) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Hide the desktop navigation */
+    #desktop-nav {
+        display: none;
+    }
+    /* Adjust the logo positioning */
+    .logo {
+    margin-left: 20px; /* Adjust the left margin as needed */
+    flex-grow: 1;
+    }
+    .section__pic-container{
+        width: auto;
+        margin-top: 40%;
+        margin: 0 auto 2rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .details-container{
+       display: flex;
+    }
+    .menu-links.open + section {
+        padding-top: 100px; /* Adjust as needed */
+    }
+    body {
+        padding-top: 60px; /* Add padding equal to or greater than the height of your fixed navbar */
+    }
+    section {
+        margin-top: 20px; /* Additional margin to ensure sections start below the navbar */
+    }
+    /* Show the hamburger icon only */
+    #hamburger-nav {
+        display: flex;
+        justify-content: flex-end; /* Aligns the hamburger menu to the right */
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        right: 20px; /* Adjust the right spacing as needed */
+        z-index: 1000;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    /* Adjust the hamburger icon positioning and styling */
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        cursor: pointer;
+    }
+    .hamburger-icon, .menu-links {
+        z-index: 1050; /* Ensures it's above most content */
+    }
+    .hamburger-icon span {
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu-links.open {
+        visibility: visible;
+        max-height: none; /* Adjust based on your actual needs */
+    }
+    #profile, .section-container{
+        display: block;
+    }
+    .about-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Reduced from an unrealistically large value */
+    }
+    .section__pic-container{
+        width: auto;
+        height: auto;
+        margin: 0 auto 2rem;
+    }
+    /* Ensures all sections have padding applied */
+    #about, #education, #projects, #contact {
+    padding-top: 230px; /* Adjust based on navbar height */
+    }
+    #skills{
+        padding-top: 150px;
+    }
+    section{
+        padding-top: 200px;
+    }
+    .about-containers {
+        display: flex;
+        justify-content: space-around; /* Or other as per design */
+    }
+    .details-container {
+        width: 95%; /* Use more of the viewport width on smaller screens */
+    }
+    .details-container.color-container {
+        width: 400px; /* Set a fixed width */
+        margin: 0 auto 20px; /* Center it horizontally and add some vertical spacing */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align the items vertically */
+        padding: 20px;
+        background-color: #fff; /* Optional: depending on your design */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+        border-radius: 10px; /* Rounded corners for aesthetics */
+    }
+    
+    .project-img {
+        width: 90%; /* Adjust based on your needs */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Space between the image and the text */
+    }
+    
+    .btn-container {
+        display: flex;
+        justify-content: center; /* Center-align the buttons */
+        gap: 10px; /* Space between multiple buttons */
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+        background-color: #555; /* Darker on hover */
+    }
+    
+}
+
+
+    
+/* Device = Tablets, Ipads (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* Hide the desktop navigation */
+#desktop-nav {
+    display: none;
+}
+
+/* Adjust the logo positioning */
+.logo {
+    margin-left: 20px; /* Adjust the left margin as needed */
+    flex-grow: 1;
+}
+
+/* Show the hamburger icon only */
+#hamburger-nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns the hamburger menu to the right */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 20px; /* Adjust the right spacing as needed */
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Adjust the hamburger icon positioning and styling */
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links.open {
+    visibility: visible;
+    max-height: none; /* Adjust based on your actual needs */
+}
+
+/* Ensure padding for sections */
+#about,
+#education,
+#projects,
+#contact,
+#skills {
+    padding-top: 130px; /* Adjust based on navbar height */
+}
+section{
+    padding-top: 120px;
+}
+/* Adjust other styles as needed */
+}
+
+
+
+
+
+/* Device = Smartphones (landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+    /* Show the hamburger icon only */
+    #hamburger-nav {
+        display: flex;
+        justify-content: flex-end; /* Aligns the hamburger menu to the right */
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        right: 100px; 
+        z-index: 1000;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    /* Adjust the hamburger icon positioning and styling */
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        cursor: pointer;
+    }
+    .hamburger-icon, .menu-links {
+        z-index: 1050; /* Ensures it's above most content */
+    }
+    .hamburger-icon span {
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu-links {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow intensity and spread as needed */
+        position: absolute;
+        right: 5;
+    }
+    .menu-links.open {
+        visibility: visible;
+        max-height: none; /* Adjust based on your actual needs */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+    .section__pic-container {
+        display: flex;
+        justify-content: center; /* Aligns content horizontally */
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+
+    #projects{
+        padding-top: 100px;
+    }
+    #workexperience{
+        padding-top: 100px;
+    }
+    /* Adjust spacing */
+    .section__text {
+        margin-bottom: 20px; /* Adjust as needed */
+    }
+
+    /* Adjust font sizes */
+    .skills-sub-title {
+        font-size: 1.25rem; /* Adjust as needed */
+    }
+
+    .logo {
+        font-size: 1.5rem; /* Adjust as needed */
+    }
+
+    /* Adjust text container */
+    .section__text {
+        padding: 0 10px; /* Adjust as needed */
+    }
+
+    .section__text__p2 {
+        font-size: 1.25rem; /* Adjust as needed */
+    }
+
+    .title {
+        font-size: 2rem; /* Adjust as needed */
+    }
+
+    /* Remove border from skills details container */
+    #skills .details-container {
+        border: none;
+    }
+    #contact{
+        padding-top: 250px;
+    }
+    .contact-info-upper-container, .btn-container{
+        flex-wrap: wrap;
+    }
+    .contact-info-container{
+        margin: 10;
+    }
+    .contact-info-container p,
+    .nav-links li a{
+        font-size: 1rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    #profile, .section-container{
+        display: block;
+    }
+    section, .section-container{
+        height: fit-content;
+        padding: 10px;
+    }
+
+    .section__pic-container{
+        width: 60%;
+        height: auto;
+        margin: 0 auto 2rem;
+    }
+    .about-containers{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Device = Most of the Smartphones Mobiles (Portrait) */
+@media (min-width: 320px) and (max-width: 480px){
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+        /* Show the hamburger icon only */
+        #hamburger-nav {
+            display: flex;
+            justify-content: flex-end; /* Aligns the hamburger menu to the right */
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* right: 20px;  */
+            z-index: 1000;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            justify-content: space-between;
+            padding: 10px;
+        }
+    
+        /* Adjust the hamburger icon positioning and styling */
+        .hamburger-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 24px;
+            width: 30px;
+            cursor: pointer;
+        }
+        .hamburger-icon, .menu-links {
+            z-index: 1050; /* Ensures it's above most content */
+        }
+        .hamburger-icon span {
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            transition: all 0.3s ease-in-out;
+        }
+        .menu-links {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow intensity and spread as needed */
+            position: absolute;
+            right: 2;
+        }
+        .menu-links.open {
+            visibility: visible;
+            max-height: none; /* Adjust based on your actual needs */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+        #contact, footer{
+        height: 40vh;
+    }
+    #profile{
+        height: 83vh;
+        margin-bottom: 200px;
+        width: auto;
+    }
+    #profile.section__text.socials-container{
+        margin-bottom:100px;
+    }
+    .section__pic-container{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .text-container{
+        margin-top: 0;
+    }
+
+    article{
+        font-size: 1rem;
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers{
+        margin-top: 10px;
+    }
+    
+    .contact-info-upper-container, .btn-container{
+        flex-wrap: wrap;
+    }
+    .contact-info-container{
+        margin: 10;
+    }
+    .contact-info-container p,
+    .nav-links li a{
+        font-size: 1rem;
+    }
+    .skills-sub-title{
+    font-size: 1.25rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    section {
+        padding-top: 90px;  /* Increased padding to prevent overlapping headers */
+        padding-bottom: 0px; /* Ensure there's space below each section */
+        margin: 0 auto;  /* Center-align the sections to avoid skewing to one side */
+    }
+    #contact{
+        padding-top: 250px;
+    }
+    .section__pic-container{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .section__text{
+        margin-bottom: 100px;    
+        padding: 0 10px;
+    }
+    .section__text__p2 {
+      font-size: 1.25rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .text-container {
+      text-align: justify;
+    }
+    #skills .details-container {
+        border: none;
+    }
+    
+}

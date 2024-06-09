@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ensures the page is responsive on different devices by setting the viewport. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Links an external CSS file for general styling. -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Links another CSS file for media queries (responsive design). -->
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- Define Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div class="menu">
+            <a href="#" class="logo">Ng Yan Ting</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#workexperience">Work Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Define Mobile Navigation -->
+    <nav id="hamburger-nav">
+        <a href ="#" class="logo">Ng Yan Ting</a>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+             <span></span>
+             <span></span>
+             <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#workexperience" onclick="toggleMenu()">Work Experience</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="profile">
+        <!-- Container for the profile picture. -->
+        <div class="section__pic-container"> 
+            <img src="ProfilePic.jpg" alt="Ng Yan Ting profile picture" class="circular-image">
+        </div>
+        <!-- Container for textual content. -->
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Ng Yan Ting</h1>
+            <p class="section__text__p2">Master of Data Science Student</p>
+            <!-- Container for buttons. -->
+            <div class="btn-container">
+                <!-- Button to download the resume. -->
+                <!-- <button class="btn btn-color-2" 
+                onclick="window.open('resume.pdf')">Download Resume</button> -->
+                <!-- Button to navigate to the contact section. -->
+                <button class="btn btn-color-2" 
+                onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="Linkedin icon.jpg" 
+                alt="My Linkedin Profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/yan-ting-ng-656b202b7/'"
+                />
+                <img src="Github icon.jpg"
+                alt="My Github Profile"
+                class="icon"
+                onclick="location.href='https://github.com/yanting0417'"
+                />
+            </div>
+        </div>
+        <!-- <img 
+        src="arrow down icon.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#about'"
+        /> -->
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</p>
+        <div class="details-container">
+            <div class="section-container">
+            <div class="section__pic-container">
+                <img
+                src="AboutMePic.jpg"
+                alt="Profile Picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="text-container">
+                <h2>
+                    As a passionate and motivated University of Malaya student 
+                    majoring in Data Science, I am eager to embark on a career 
+                    in the field of Data Science. With a strong passion for learning 
+                    and a solid foundation in data analysis and machine learning 
+                    techniques, I am excited to apply my skills and knowledge in 
+                    a practical setting. I am committed to gaining valuable hands-on 
+                    experience in the industry while making meaningful contributions 
+                    to your organization's success.
+                </p>
+            </div>
+        </div>
+        </div>
+    <!-- <img 
+    src="arrow down icon.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#education'"
+    /> -->
+    </section>
+    <section id="education">
+        <p class="section__text__p1">Discover my</p>
+        <h1 class="title">Education</h1>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <!-- Education -->
+                <div class="details-container education-container">
+                    <div class="education-icon">
+                        <img
+                        src="education icon.png"
+                        alt="Education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <div class="education-details">
+                            <div class="education-info">
+                                <h3>Master of Data Science</h3>
+                                <p1>University of Malaya (2023 - Current)</p>
+                                <p>First Class Honor</p>
+                                <!-- <p>CGPA: 4.00 / 4.00</p> -->
+                            </div>
+                            <div class="education-info">
+                                <h3>Bachelor of Science in Genetics</h3>
+                                <p1>University of Malaya (2019 - 2023)</p>
+                                <!-- <p>CGPA: 3.75 / 4.00</p> -->
+                                <p>First Class Honor</p>
+                            </div>
+                            <div class="education-info">
+                                <h3>Matriculation Programme</h3>
+                                <p1>Penang Matriculation College (2018 - 2019)</p>
+                                <!-- <p>CGPA: 3.96 / 4.00</p> -->
+                                <p>First Class Honor</p>
+                            </div>
+                            <div class="education-info">
+                                <h3>Secondary School</h3>
+                                <p>SMK Sungai Rambai</p>
+                                <p>SPM: 8A+ 2A</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- <img 
+    src="arrow down icon.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#workexperience'"
+    /> -->
+    </section>
+    <section id="workexperience">
+        <p class="section__text__p1">Unveil my</p>
+        <h1 class="title">Work Experience</h1>
+        <div class="about-details-container">
+            <div class="about-containers">
+                 <!-- Work Experience -->
+                <div class="details-container work-experience-container">
+                        <div class="work-experience">
+                            <img 
+                            src="work experience icon.png"
+                            alt="Work experience icon"
+                            class="icon"
+                            />
+                            <!-- <h3>Work Experience</h3> -->
+                        <div class="job-details">
+                            <div class="job">
+                                <h3>Intern</h3>
+                                <p>July 2022 - September 2022 | LifeCare Diagnostic Medical Centre </p>
+                                <ul>
+                                    <li>Conducted diagnostic tests on patient specimens including blood, urine, and stool samples.</li>
+                                    <li>Performed blood draws and glucose tests.</li>
+                                    <li>Worked in a fast-paced environment with strict adherence to laboratory protocols.</li>
+                                </ul>
+                            </div>
+                            <div class="job">
+                                <h3>Tuition Teacher</h3>
+                                <p>March 2021 - February 2022 | Melaka</p1>
+                                <ul>
+                                    <li>Co-founded and operated a successful tuition class business, gaining fundamental teaching and class planning experiences.</li>
+                                    <li>Managed finances and customer relationships, resulting in high satisfaction and retention rates.</li>
+                                </ul>
+                            </div>
+                            <div class="job">
+                                <h3>Sales and Promotion Assistant</h3>
+                                <p>May 2019 - August 2019 | Resorts World Genting</p>
+                                <ul>
+                                    <li>Assisted in developing and executing sales and promotion strategies.</li>
+                                    <li>Cultivated strong communication skills through regular interactions with diverse customers.</li>
+                                </ul>
+                            </div>
+                            <div class="job">
+                                <h3>Marketing Assistant</h3>
+                                <p>December 2017-April 2018 | Pine Packaging (M) Sdn. Bhd.</p>
+                                <ul>
+                                    <li>Assisted marketing team in event planning.</li>
+                                    <li>Contributed to the creation of marketing materials, including flyers and posters.</li>
+                                    <li>Sharpened communication skills through interactions with customers.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <img 
+        src="arrow down icon.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+        /> -->
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Skills</h1>
+        <div class="details-container">
+            <div class="skills-details-container">
+        <!-- <div class="about-details-containers"> -->
+            <!-- <div class="details-container"> -->
+                <!-- <div class="details-container-skills">
+                <h2 class="skills-sub-title">Intermediate Level</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Python</h3>
+                            <p>Intermediate Level</p> -->
+                        <!-- </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>R Language</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Microsoft Office</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Google Suites</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Machine Learning</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Power BI</h3>
+                        </div>
+                    </article> 
+                </div>
+                </div>
+                
+            </div> --> 
+            <!-- <div class="details-container"> -->
+                <div class="details-container-skills">
+                <h2 class="skills-sub-title">Hard Skills</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Python</h3>
+                            <!-- <p>Intermediate Level</p> -->
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>R Language</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Microsoft Office</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Google Suites</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Machine Learning</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Power BI</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <!-- <p>Intermediate Level</p> -->
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Cascading Style Sheets (CSS)</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>JavaScript</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Apache Hadoop</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Apache Hive</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Apache Pig</h3>
+                        </div>
+                    </article> 
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>MongoDB</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Streamlit</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>SQL</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Amazon Web Services (AWS)</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Google Cloud Platform (GCP)</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>SAS</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Weka</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>RapidMiner</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="skill icon.png" alt="Skills icon" Class="icon"
+                        />
+                        <div>
+                            <h3>Alteryx</h3>
+                        </div>
+                    </article>
+
+                </div>
+                </div>
+                <div class="details-container-skills">
+                    <h2 class="skills-sub-title">Language</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="skill icon.png" alt="Skills icon" Class="icon"
+                            />
+                            <div>
+                                <h3>Chinese | Native</h3>
+                                <!-- <p>Intermediate Level</p> -->
+                            </div>
+                        </article> 
+                        <article>
+                            <img src="skill icon.png" alt="Skills icon" Class="icon"
+                            />
+                            <div>
+                                <h3>English | Professional working proficiency</h3>
+                                <!-- <p>Intermediate Level</p> -->
+                            </div>
+                        </article> 
+                        <article>
+                            <img src="skill icon.png" alt="Skills icon" Class="icon"
+                            />
+                            <div>
+                                <h3>Malay | Professional working proficiency</h3>
+                                <!-- <p>Intermediate Level</p> -->
+                            </div>
+                        </article> 
+                    </div>
+        </div>
+        <!-- </div>
+        </div> -->
+        <!-- <img 
+        src="arrow down icon.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+        /> -->
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                    src="Job scam.png"
+                    alt="Project 1"
+                    class="project-img"
+                    />
+                </div>
+                <h3 class="skills-sub-title project-title">Project 1</h3>
+                <h3>Fraudulent Job Detection</h3>
+                <p class="section__text__p1">Python | Streamlit | Machine Learning | Classification Model</p> 
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/yanting0417/fraud_job_prediction'"
+                    >
+                    Github
+                    </button>
+                    <!-- <button 
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='http://localhost:8080/'"
+                    >
+                    Demo
+                    </button> -->
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                    src="car price icon.jpg"
+                    alt="Project 1"
+                    class="project-img"
+                    />
+                </div>
+                <h3 class="skills-sub-title project-title">Project 2</h3>
+                <h3>Car Price Estimator</h3>
+                <p class="section__text__p1">Python | Streamlit | Machine Learning | Regression Model</p> 
+                
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/yanting0417/car_price_prediction'"
+                    >
+                    Github
+                    </button>
+                    <!-- <button 
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='http://localhost:8080/'"
+                    >
+                    Demo
+                    </button> -->
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                    src="movie icon.avif"
+                    alt="Project 1"
+                    class="project-img"
+                    />
+                </div>
+                <h3 class="skills-sub-title project-title">Project 3</h3>
+                <h3>Movie Recommendation System</h3>
+                <p class="section__text__p1">Python | FastAPI | Machine Learning</p>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/yanting0417/Movie-Recommendation-System'"
+                    >
+                    Github
+                    </button>
+                    <!-- <button 
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='http://localhost:8080/'"
+                    >
+                    Demo
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    <!-- <img 
+        src="arrow down icon.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+    /> -->
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="email icon.jpg"
+                alt="Email icon"
+                class="icon contact-icon"
+                />
+                <p><a href="mailto:exampleemail@gmail.com">yanting0417@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="Linkedin icon.jpg"
+                alt="Linkedin icon"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/yan-ting-ng-656b202b7/">My Linkedin</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="Whatsapp icon.png"
+                alt="Linkedin icon"
+                class="icon contact-icon"
+                />
+                <p1>014-999 0417</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#workexperience">Work Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Ng Yan Ting. All Rights Reserved</p>
+    </footer>
+    <!-- Links external JavaScript for additional functionality, such as the toggle menu behavior. -->
+    <script src="script.js"></script>
+</body>
+</html>
